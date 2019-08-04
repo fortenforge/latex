@@ -260,8 +260,28 @@ let problems = [
 		"latex": String.raw`\det \begin{bmatrix} a & b \\ c & d \end{bmatrix} = ad - bc`
 	},
 	{
-		"title": "Sawtooth funnctionn",
+		"title": "Sawtooth funnction",
 		"description": "mathbb cases floors, this has it all",
 		"latex": String.raw`S(x) = \begin{cases} x - \lfloor x \rfloor - 1/2, & x \in \mathbb{R} \setminus \mathbb{Z} \\ 0, & x \in \mathbb{Z} \end{cases}`
+	},
+	{
+		"title": "Quantum Fourier transform",
+		"description": "bra ket notation is fun",
+		"latex": String.raw`|x\rangle \mapsto \frac{1}{\sqrt{N}} \sum_{k = 0}^{N-1} \omega_x^k |k\rangle`
+	},
+	{
+		"title": "Recursive definition of the Hadamard transform",
+		"description": "matrix in cases",
+		"latex": String.raw`H_m = \begin{cases} 1 & m = 0 \\ \frac{1}{\sqrt{2}}\begin{pmatrix} H_{m-1} & H_{m-1} \\ H_{m-1} & -H_{m-1}\end{pmatrix} & m > 0\end{cases}`
+	},
+	{
+		"title": "Wigner transform of the density matrix",
+		"description": "I know some of these words",
+		"latex": String.raw`W(x,p) = \frac{1}{\pi \hbar} \int_{-\infty}^\infty \langle x + y | \hat{\rho} | x - y \rangle e^{-2ipy/\hbar} dy`
+	},
+	{
+		"title": "Axiom of Choice",
+		"description": "~~controversial~~",
+		"latex": String.raw`\forall X \left [ \varnothing \notin X \implies \exists f:X \to \bigcup X \  \forall A \in X (f(A) \in A) \right]`
 	}
 ];
